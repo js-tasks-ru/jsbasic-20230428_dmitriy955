@@ -30,7 +30,6 @@ export default class ProductCard {
 
   render() {
     const elem = document.createElement("div");
-    elem.classList.add("card");
     elem.innerHTML = this.getTemplate();
 
     let addButton = elem.querySelector('.card__button');
