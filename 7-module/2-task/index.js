@@ -33,7 +33,8 @@ export default class Modal {
   }
 
   setTitle(title) {
-    this.elem.querySelector(".modal__title").append(title);
+    let modalTitle = this.elem.querySelector(".modal__title");
+    modalTitle.textContent = title;
   }
 
   setBody(node) {
